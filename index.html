@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento Facial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-blue-600 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-5 py-4 grid grid-cols-3 items-center">
+            <div class="flex items-center space-x-2">
+                <img src="logo-faceid.svg" alt="Logo FaceID" class="h-10 w-auto">
+                <!-- FaceID en color negro con text-black -->
+                <span class="text-2xl font-bold tracking-tight text-black">FaceID</span>
+            </div>
+
+            <nav class="hidden md:flex justify-center space-x-8 font-medium">
+                <a href="#" class="hover:text-cyan-200 transition">Inicio</a>
+                <a href="#" class="hover:text-cyan-200 transition">Servicios</a>
+                <a href="#" class="hover:text-cyan-200 transition">Contacto</a>
+            </nav>
+
+            <div class="flex justify-end">
+                <button class="bg-white text-blue-600 hover:bg-blue-50 px-5 py-2 rounded-xl font-semibold transition shadow-md">
+                    Iniciar Sesión
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-5 py-14 w-full">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16">
+            <div>
+                <h1 class="text-4xl sm:text-5xl font-bold mb-4 tracking-tight leading-tight text-black">Reconocimiento Facial</h1>
+                <p class="text-gray-600 text-lg mb-6 leading-relaxed">Tecnología que identifica rostros de forma rápida, segura y precisa.</p>
+                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-xl transition shadow-lg shadow-blue-600/30">
+                    Conoce más
+                </a>
+            </div>
+            <div>
+                <img src="rostro-reconocimiento.jpg" alt="Rostro Detección" class="rounded-2xl shadow-xl w-full object-cover h-80 md:h-96">
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white p-7 rounded-2xl shadow-md hover:-translate-y-1 hover:shadow-xl transition flex flex-col justify-between">
+                <div>
+                    <div class="mx-auto bg-blue-50 w-14 h-14 rounded-2xl flex items-center justify-center mb-5 p-2">
+                        <img src="icon-rapidez.svg" alt="Icono Detección Facial" class="w-10 h-10 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900 text-center">Detección Facial</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-center">Identifica rostros en tiempo real con alta precisión.</p>
+                </div>
+                <div class="flex justify-center">
+                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-xl transition inline-flex items-center shadow-sm">
+                        Ver más &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-7 rounded-2xl shadow-md hover:-translate-y-1 hover:shadow-xl transition flex flex-col justify-between">
+                <div>
+                    <div class="mx-auto bg-blue-50 w-14 h-14 rounded-2xl flex items-center justify-center mb-5 p-2">
+                        <img src="icon-seguridad.svg" alt="Icono Seguridad Inteligente" class="w-10 h-10 object-contain">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900 text-center">Seguridad Inteligente</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-center">Protege tu información con tecnología avanzada.</p>
+                </div>
+                <div class="flex justify-center">
+                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-xl transition inline-flex items-center shadow-sm">
+                        Ver más &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Pie de página -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="max-w-7xl mx-auto px-5 flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
+            <!-- Logo Footer -->
+            <div class="flex items-center space-x-2">
+                <img src="logo-faceid.svg" alt="Logo FaceID" class="h-8 w-auto">
+                <span class="text-white font-bold text-lg">FaceID</span>
+            </div>
+
+            <!-- Enlaces Footer -->
+            <ul class="flex space-x-6 text-sm">
+                <li><a href="#" class="hover:text-white transition">Inicio</a></li>
+                <li><a href="#" class="hover:text-white transition">Servicios</a></li>
+                <li><a href="#" class="hover:text-white transition">Contacto</a></li>
+            </ul>
+
+            <!-- Redes sociales -->
+            <div class="flex space-x-4 text-gray-400">
+                <a href="#" class="hover:text-white transition bg-gray-800 p-2 rounded-lg text-xs font-bold">f</a>
+                <a href="#" class="hover:text-white transition bg-gray-800 p-2 rounded-lg text-xs font-bold">ig</a>
+                <a href="#" class="hover:text-white transition bg-gray-800 p-2 rounded-lg text-xs font-bold">in</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-sm text-gray-400">
+                &copy; 2026 FaceID. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
